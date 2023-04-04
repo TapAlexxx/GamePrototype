@@ -2,7 +2,7 @@
 using Cinemachine;
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.Logic.CameraControl
+namespace GamePrototype.Scripts.Logic.CameraControl
 {
     public class CameraStateChanger : MonoBehaviour
     {

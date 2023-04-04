@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States;
+using GamePrototype.Scripts.Infrastructure.StateMachine.Game.States;
 using Zenject;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game
+namespace GamePrototype.Scripts.Infrastructure.StateMachine.Game
 {
     public class GameStateFactory : StateFactory
     {

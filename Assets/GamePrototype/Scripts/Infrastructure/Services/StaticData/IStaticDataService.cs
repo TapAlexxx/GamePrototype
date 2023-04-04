@@ -1,7 +1,7 @@
-using PROJECT_NAME.Scripts.StaticData;
-using PROJECT_NAME.Scripts.Window;
+using GamePrototype.Scripts.StaticData;
+using GamePrototype.Scripts.Window;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.Services.StaticData
+namespace GamePrototype.Scripts.Infrastructure.Services.StaticData
 {
     public interface IStaticDataService
     {

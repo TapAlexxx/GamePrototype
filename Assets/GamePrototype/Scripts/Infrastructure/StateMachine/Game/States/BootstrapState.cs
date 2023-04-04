@@ -1,8 +1,8 @@
-﻿using PROJECT_NAME.Scripts.Infrastructure.Services.StaticData;
-using PROJECT_NAME.Scripts.StaticData;
+﻿using GamePrototype.Scripts.Infrastructure.Services.StaticData;
+using GamePrototype.Scripts.StaticData;
 using UnityEngine.SceneManagement;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States
+namespace GamePrototype.Scripts.Infrastructure.StateMachine.Game.States
 {
     public class BootstrapState : IState, IGameState
     {

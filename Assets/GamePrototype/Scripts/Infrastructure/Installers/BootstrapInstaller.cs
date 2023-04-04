@@ -1,15 +1,15 @@
-using PROJECT_NAME.Scripts.Infrastructure.Services.Factories.Game;
-using PROJECT_NAME.Scripts.Infrastructure.Services.Factories.UIFactory;
-using PROJECT_NAME.Scripts.Infrastructure.Services.PersistenceProgress;
-using PROJECT_NAME.Scripts.Infrastructure.Services.StaticData;
-using PROJECT_NAME.Scripts.Infrastructure.Services.Window;
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine;
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game;
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States;
+using GamePrototype.Scripts.Infrastructure.Services.Factories.Game;
+using GamePrototype.Scripts.Infrastructure.Services.Factories.UIFactory;
+using GamePrototype.Scripts.Infrastructure.Services.PersistenceProgress;
+using GamePrototype.Scripts.Infrastructure.Services.StaticData;
+using GamePrototype.Scripts.Infrastructure.Services.Window;
+using GamePrototype.Scripts.Infrastructure.StateMachine;
+using GamePrototype.Scripts.Infrastructure.StateMachine.Game;
+using GamePrototype.Scripts.Infrastructure.StateMachine.Game.States;
 using UnityEngine;
 using Zenject;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.Installers
+namespace GamePrototype.Scripts.Infrastructure.Installers
 {
     public class BootstrapInstaller : MonoInstaller
     {

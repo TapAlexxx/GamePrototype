@@ -1,7 +1,7 @@
 using System;
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States;
+using GamePrototype.Scripts.Infrastructure.StateMachine.Game.States;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine
+namespace GamePrototype.Scripts.Infrastructure.StateMachine
 {
     public class PayloadedStateInfo<TState, TBaseState, TPayload> : IStateInfo where TState : class, IPayloadedState<TPayload>, TBaseState
     {

@@ -1,6 +1,6 @@
-﻿using PROJECT_NAME.Scripts.Window;
+﻿using GamePrototype.Scripts.Window;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.Services.Window
+namespace GamePrototype.Scripts.Infrastructure.Services.Window
 {
   public interface IWindowService
   {

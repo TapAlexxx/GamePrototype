@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PROJECT_NAME.Scripts.Extensions
+namespace GamePrototype.Scripts.Extensions
 {
     public static class FunctionalExtensions
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.Logic.PlayerInputControl
+namespace GamePrototype.Scripts.Logic.PlayerInputControl
 {
     public class PlayerDragInput : MonoBehaviour
     {

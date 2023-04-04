@@ -1,4 +1,4 @@
-﻿namespace PROJECT_NAME.Scripts.Window
+﻿namespace GamePrototype.Scripts.Window
 {
     public enum WindowTypeId
     {

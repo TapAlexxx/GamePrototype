@@ -1,7 +1,7 @@
-﻿using PROJECT_NAME.Scripts.Window;
+﻿using GamePrototype.Scripts.Window;
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.Services.Factories.UIFactory
+namespace GamePrototype.Scripts.Infrastructure.Services.Factories.UIFactory
 {
   public interface IUIFactory
   {

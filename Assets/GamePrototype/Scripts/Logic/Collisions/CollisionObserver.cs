@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.Logic.Collisions
+namespace GamePrototype.Scripts.Logic.Collisions
 {
     public class CollisionObserver : MonoBehaviour
     {

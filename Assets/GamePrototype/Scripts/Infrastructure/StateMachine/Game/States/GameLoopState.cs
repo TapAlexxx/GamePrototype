@@ -1,4 +1,4 @@
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States
+namespace GamePrototype.Scripts.Infrastructure.StateMachine.Game.States
 {
     public class GameLoopState : IState, IGameState, IUpdatable
     {

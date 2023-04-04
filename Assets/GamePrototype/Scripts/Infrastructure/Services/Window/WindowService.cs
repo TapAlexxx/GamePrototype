@@ -1,8 +1,8 @@
-﻿using PROJECT_NAME.Scripts.Infrastructure.Services.Factories.UIFactory;
-using PROJECT_NAME.Scripts.Window;
+﻿using GamePrototype.Scripts.Infrastructure.Services.Factories.UIFactory;
+using GamePrototype.Scripts.Window;
 using Zenject;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.Services.Window
+namespace GamePrototype.Scripts.Infrastructure.Services.Window
 {
     public class WindowService : IWindowService
     {

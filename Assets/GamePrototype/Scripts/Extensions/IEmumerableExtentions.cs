@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace PROJECT_NAME.Scripts.Extensions
+namespace GamePrototype.Scripts.Extensions
 {
   public static class IEmumerableExtentions
   {

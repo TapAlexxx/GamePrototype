@@ -1,11 +1,11 @@
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine;
-using PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States;
+using GamePrototype.Scripts.Infrastructure.StateMachine;
+using GamePrototype.Scripts.Infrastructure.StateMachine.Game.States;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
 
-namespace PROJECT_NAME.Scripts.Logic.Hud.Buttons
+namespace GamePrototype.Scripts.Logic.Hud.Buttons
 {
     public class RestartButton : MonoBehaviour
     {

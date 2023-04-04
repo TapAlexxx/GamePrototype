@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace PROJECT_NAME.Scripts.Infrastructure
+namespace GamePrototype.Scripts.Infrastructure
 {
     public class GameRunner : MonoBehaviour
     {

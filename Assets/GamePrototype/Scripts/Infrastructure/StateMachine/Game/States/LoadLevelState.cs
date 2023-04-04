@@ -1,13 +1,11 @@
-﻿using System;
-using PROJECT_NAME.Scripts.Infrastructure.Services.Factories.Game;
-using PROJECT_NAME.Scripts.Infrastructure.Services.Factories.UIFactory;
-using PROJECT_NAME.Scripts.Logic.CameraControl;
-using PROJECT_NAME.Scripts.Logic.SpawnControl;
+﻿using GamePrototype.Scripts.Infrastructure.Services.Factories.Game;
+using GamePrototype.Scripts.Infrastructure.Services.Factories.UIFactory;
+using GamePrototype.Scripts.Logic.CameraControl;
 using UnityEngine;
 using Zenject;
 using Object = UnityEngine.Object;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States
+namespace GamePrototype.Scripts.Infrastructure.StateMachine.Game.States
 {
     public class LoadLevelState : IPayloadedState<string>, IGameState
     {

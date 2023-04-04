@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.Logic.SpawnControl
+namespace GamePrototype.Scripts.Logic.SpawnControl
 {
     public abstract class Spawner : MonoBehaviour
     {

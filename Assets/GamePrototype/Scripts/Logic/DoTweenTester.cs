@@ -1,7 +1,7 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.Logic
+namespace GamePrototype.Scripts.Logic
 {
     public class DoTweenTester : MonoBehaviour
     {

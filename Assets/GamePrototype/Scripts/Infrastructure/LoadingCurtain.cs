@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PROJECT_NAME.Scripts.Infrastructure
+namespace GamePrototype.Scripts.Infrastructure
 {
     public class LoadingCurtain : MonoBehaviour, ILoadingCurtain
     {

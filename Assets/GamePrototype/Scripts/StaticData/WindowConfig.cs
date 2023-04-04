@@ -1,8 +1,8 @@
 ﻿using System;
-using PROJECT_NAME.Scripts.Window;
+using GamePrototype.Scripts.Window;
 using UnityEngine;
 
-namespace PROJECT_NAME.Scripts.StaticData
+namespace GamePrototype.Scripts.StaticData
 {
   [Serializable]
   public class WindowConfig

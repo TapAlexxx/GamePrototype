@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace PROJECT_NAME.Scripts.Infrastructure
+namespace GamePrototype.Scripts.Infrastructure
 {
     public class SceneLoader : ISceneLoader
     {

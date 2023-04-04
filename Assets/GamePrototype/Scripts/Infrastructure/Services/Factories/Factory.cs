@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.Services.Factories
+namespace GamePrototype.Scripts.Infrastructure.Services.Factories
 {
     public abstract class Factory
     {

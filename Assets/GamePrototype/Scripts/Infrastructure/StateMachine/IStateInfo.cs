@@ -1,7 +1,7 @@
 
 using System;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine
+namespace GamePrototype.Scripts.Infrastructure.StateMachine
 {
     public interface IStateInfo
     {

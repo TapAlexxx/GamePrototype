@@ -1,7 +1,7 @@
-using PROJECT_NAME.Scripts.Infrastructure.Services.PersistenceProgress;
-using PROJECT_NAME.Scripts.Infrastructure.Services.PersistenceProgress.Player;
+using GamePrototype.Scripts.Infrastructure.Services.PersistenceProgress;
+using GamePrototype.Scripts.Infrastructure.Services.PersistenceProgress.Player;
 
-namespace PROJECT_NAME.Scripts.Infrastructure.StateMachine.Game.States
+namespace GamePrototype.Scripts.Infrastructure.StateMachine.Game.States
 {
     public class LoadProgressState : IPayloadedState<string>, IGameState
     {
