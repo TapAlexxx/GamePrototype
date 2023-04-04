@@ -10,9 +10,13 @@ namespace GamePrototype.Scripts.Infrastructure.Services.StaticData
     {
         private const string GameConfigPath = "StaticData/GameConfig";
         private const string WindowsStaticDataPath = "StaticData/WindowsStaticData";
+        private const string PlayerConfigsPath = "StaticData/PlayerConfigs";
+        private const string LevelGenerationConfigPath = "StaticData/LevelGenerationConfigs/Default";
 
         private GameStaticData _gameStaticData;
         private Dictionary<WindowTypeId, WindowConfig> _windowConfigs;
+        private List<PlayerConfig> _playerConfigs;
+        private LevelGenerationConfig _levelGenerationConfig;
 
         public void LoadData()
         {
@@ -22,7 +26,20 @@ namespace GamePrototype.Scripts.Infrastructure.Services.StaticData
             _windowConfigs = Resources
                 .Load<WindowStaticData>(WindowsStaticDataPath)
                 .Configs.ToDictionary(x => x.WindowTypeId, x => x);
+
+            _playerConfigs = Resources
+                .LoadAll<PlayerConfig>(PlayerConfigsPath)
+                .ToList();
+
+            _levelGenerationConfig = Resources
+                .Load<LevelGenerationConfig>(LevelGenerationConfigPath);
         }
+
+        public PlayerConfig PlayerConfigFor(PlayerTypeId playerTypeId) =>
+            _playerConfigs.FirstOrDefault(x => x.PlayerTypeId == playerTypeId);
+
+        public LevelGenerationConfig LevelGenerationConfig() => 
+            _levelGenerationConfig;
 
         public GameStaticData GameConfig() =>
             _gameStaticData;

@@ -8,5 +8,7 @@ namespace GamePrototype.Scripts.Infrastructure.Services.StaticData
         void LoadData();
         GameStaticData GameConfig();
         WindowConfig ForWindow(WindowTypeId windowTypeId);
+        PlayerConfig PlayerConfigFor(PlayerTypeId playerTypeId);
+        LevelGenerationConfig LevelGenerationConfig();
     }
 }
