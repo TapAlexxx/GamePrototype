@@ -1,7 +1,13 @@
-﻿using GamePrototype.Scripts.Infrastructure.Services.Factories.Game;
+﻿using System;
+using GamePrototype.Scripts.Infrastructure.Services.Factories.Game;
 using GamePrototype.Scripts.Infrastructure.Services.Factories.UIFactory;
+using GamePrototype.Scripts.Logic;
 using GamePrototype.Scripts.Logic.CameraControl;
+using GamePrototype.Scripts.Logic.LevelGeneration;
+using GamePrototype.Scripts.Logic.SpawnControl;
+using GamePrototype.Scripts.StaticData;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Zenject;
 using Object = UnityEngine.Object;
 
@@ -56,22 +62,33 @@ namespace GamePrototype.Scripts.Infrastructure.StateMachine.Game.States
            _gameFactory.Clear();
 
            InitHud();
-           InitCamera();
+           InitPlayer();
+           InitLevelGenerator();
+           
+           Inject<Finish>();
+        }
+
+        private void InitLevelGenerator()
+        {
+            var levelGeneratorObject = _gameFactory.CreateLevelGenerator();
+            var levelGenerator = levelGeneratorObject.GetComponent<LevelGenerator>();
+            var obstaclePool= levelGeneratorObject.GetComponent<ObstaclePool>();
+            obstaclePool.InitializePool();
+            levelGenerator.GenerateLevel();
+        }
+
+        private void InitPlayer()
+        {
+            PlayerSpawnMarker spawnMarker = Object.FindObjectOfType<PlayerSpawnMarker>();
+            if (!spawnMarker)
+                throw new NullReferenceException($"no player spawnMarker on scene - {SceneManager.GetActiveScene().name}");
+            
+            _gameFactory.CreatePlayer(PlayerTypeId.Default, spawnMarker.transform);
         }
 
         private void InitHud()
         {
             GameObject hud = _gameFactory.CreateHud();
-        }
-
-        private void InitCamera()
-        {
-            CameraStateChanger cameraStateChanger = Object.FindObjectOfType<CameraStateChanger>();
-            Transform player = _gameFactory.Player 
-                ? _gameFactory.Player.transform 
-                : new GameObject { transform = { position = new Vector3(0, -2 ,10)} }.transform;
-            cameraStateChanger.Initialize(player.transform);
-            cameraStateChanger.SwitchTo(CameraViewState.Default, player);
         }
 
         private void Inject<T>() where T : Object
