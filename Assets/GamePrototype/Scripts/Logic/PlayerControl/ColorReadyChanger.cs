@@ -33,7 +33,7 @@ namespace GamePrototype.Scripts.Logic.PlayerControl
         private void SetActiveColor()
         {
             Debug.Log("color Active");
-            _renderer.sharedMaterial.SetColor("_EmissionColor", Color.yellow * 3);
+            _renderer.sharedMaterial.SetColor("_EmissionColor", Color.yellow * 4);
         }
 
         private void SetDisabledColor()

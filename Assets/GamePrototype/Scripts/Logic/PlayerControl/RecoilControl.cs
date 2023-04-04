@@ -49,7 +49,7 @@ namespace GamePrototype.Scripts.Logic.PlayerControl
         private IEnumerator Observe()
         {
             yield return new WaitForSeconds(1f);
-            while (_rigidbody.velocity.magnitude > 0)
+            while (_rigidbody.velocity.magnitude > 0.05f)
             {
                 yield return null;
             }
@@ -66,6 +66,7 @@ namespace GamePrototype.Scripts.Logic.PlayerControl
 
         public void Activate()
         {
+            TryStopCoroutine(ref _observeCoroutine);
             _active = true;
         }
     }
